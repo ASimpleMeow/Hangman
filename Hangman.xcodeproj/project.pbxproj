@@ -8,15 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5BBD2AC21FCC109A003539AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD2AC11FCC109A003539AB /* AppDelegate.swift */; };
-		5BBD2AC41FCC109A003539AB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2AC31FCC109A003539AB /* GameScene.sks */; };
-		5BBD2AC61FCC109A003539AB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2AC51FCC109A003539AB /* Actions.sks */; };
 		5BBD2AC81FCC109A003539AB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD2AC71FCC109A003539AB /* GameScene.swift */; };
 		5BBD2ACA1FCC109A003539AB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD2AC91FCC109A003539AB /* GameViewController.swift */; };
 		5BBD2ACD1FCC109A003539AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2ACB1FCC109A003539AB /* Main.storyboard */; };
 		5BBD2ACF1FCC109A003539AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2ACE1FCC109A003539AB /* Assets.xcassets */; };
 		5BBD2AD21FCC109A003539AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2AD01FCC109A003539AB /* LaunchScreen.storyboard */; };
-		5BBD2ADD1FCC109A003539AB /* HangmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD2ADC1FCC109A003539AB /* HangmanTests.swift */; };
-		5BBD2AE81FCC109A003539AB /* HangmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD2AE71FCC109A003539AB /* HangmanUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +35,6 @@
 /* Begin PBXFileReference section */
 		5BBD2ABE1FCC1099003539AB /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBD2AC11FCC109A003539AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BBD2AC31FCC109A003539AB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5BBD2AC51FCC109A003539AB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		5BBD2AC71FCC109A003539AB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5BBD2AC91FCC109A003539AB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5BBD2ACC1FCC109A003539AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,11 +42,7 @@
 		5BBD2AD11FCC109A003539AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BBD2AD31FCC109A003539AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BBD2AD81FCC109A003539AB /* HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BBD2ADC1FCC109A003539AB /* HangmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanTests.swift; sourceTree = "<group>"; };
-		5BBD2ADE1FCC109A003539AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BBD2AE31FCC109A003539AB /* HangmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BBD2AE71FCC109A003539AB /* HangmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanUITests.swift; sourceTree = "<group>"; };
-		5BBD2AE91FCC109A003539AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				5BBD2AC01FCC1099003539AB /* Hangman */,
-				5BBD2ADB1FCC109A003539AB /* HangmanTests */,
-				5BBD2AE61FCC109A003539AB /* HangmanUITests */,
 				5BBD2ABF1FCC1099003539AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				5BBD2AC11FCC109A003539AB /* AppDelegate.swift */,
-				5BBD2AC31FCC109A003539AB /* GameScene.sks */,
-				5BBD2AC51FCC109A003539AB /* Actions.sks */,
 				5BBD2AC71FCC109A003539AB /* GameScene.swift */,
 				5BBD2AC91FCC109A003539AB /* GameViewController.swift */,
 				5BBD2ACB1FCC109A003539AB /* Main.storyboard */,
@@ -114,24 +100,6 @@
 				5BBD2AD31FCC109A003539AB /* Info.plist */,
 			);
 			path = Hangman;
-			sourceTree = "<group>";
-		};
-		5BBD2ADB1FCC109A003539AB /* HangmanTests */ = {
-			isa = PBXGroup;
-			children = (
-				5BBD2ADC1FCC109A003539AB /* HangmanTests.swift */,
-				5BBD2ADE1FCC109A003539AB /* Info.plist */,
-			);
-			path = HangmanTests;
-			sourceTree = "<group>";
-		};
-		5BBD2AE61FCC109A003539AB /* HangmanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5BBD2AE71FCC109A003539AB /* HangmanUITests.swift */,
-				5BBD2AE91FCC109A003539AB /* Info.plist */,
-			);
-			path = HangmanUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,10 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BBD2ACD1FCC109A003539AB /* Main.storyboard in Resources */,
-				5BBD2AC41FCC109A003539AB /* GameScene.sks in Resources */,
 				5BBD2ACF1FCC109A003539AB /* Assets.xcassets in Resources */,
 				5BBD2AD21FCC109A003539AB /* LaunchScreen.storyboard in Resources */,
-				5BBD2AC61FCC109A003539AB /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BBD2ADD1FCC109A003539AB /* HangmanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BBD2AE81FCC109A003539AB /* HangmanUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H68RG2SRC;
 				INFOPLIST_FILE = Hangman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ie.wit.Hangman;
@@ -453,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H68RG2SRC;
 				INFOPLIST_FILE = Hangman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ie.wit.Hangman;
