@@ -10,7 +10,10 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var tipLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let scene = GameScene(size: view.bounds.size)
@@ -20,9 +23,17 @@ class GameViewController: UIViewController {
         skView.ignoresSiblingOrder = true
         scene.scaleMode = .resizeFill
         skView.presentScene(scene)
+        
+        tipLabel.isHidden = true
+        tipLabel.text = scene.currentWordDefintion
     }
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @IBAction func onTipButton() {
+        tipLabel.isHidden = !tipLabel.isHidden
+    }
+    
 }

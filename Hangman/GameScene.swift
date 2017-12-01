@@ -15,6 +15,9 @@ class GameScene: SKScene {
         "Cat", "Lion", "Castle", "King", "Program", "Test", "Computer"
     ]
     
+    public var currentWord : String = ""
+    public var currentWordDefintion : String = ""
+    
     override func didMove(to view: SKView) {
         
         let limit = 8
@@ -33,10 +36,11 @@ class GameScene: SKScene {
         
         let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
         
-        print(getWordDefinition(word: words[randomIndex]))
+        currentWord = words[randomIndex]
+        currentWordDefintion = getWordDefinition(word: currentWord)
         
         let label = SKLabelNode()
-        label.text = words[randomIndex]
+        label.text = currentWord
         label.fontSize = fontSize
         label.fontColor = SKColor.white
         label.position = CGPoint(x: 300, y: size.height * 0.75)
