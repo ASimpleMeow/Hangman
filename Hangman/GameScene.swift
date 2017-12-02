@@ -12,7 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     let words : [String] = [
-        "Cat", "Lion", "Castle", "King", "Program", "Test", "Computer"
+        "Caat", "Liion", "Casstle", "Kinng", "Proggram", "Tetst", "Compurter"
     ]
     
     public var currentWord : String = ""
@@ -20,28 +20,22 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        let limit = 8
-        let fontSize = CGFloat(Int(Float(limit) * Float(10) * Float(0.3)))
-        var currentX = CGFloat(fontSize/2) - CGFloat(fontSize/8)
+        let rect = SKShapeNode(rect: CGRect(x: size.width*0.25, y: size.height * 0.55, width: size.width*0.03, height: size.height * 0.33))
+        rect.fillColor = SKColor.blue
+        addChild(rect)
         
-        for _ in 0...limit {
-            let label = SKLabelNode()
-            label.text = "_"
-            label.fontSize = fontSize
-            label.fontColor = SKColor.white
-            label.position = CGPoint(x: currentX, y: size.height * 0.50)
-            addChild(label)
-            currentX += CGFloat(size.width / CGFloat(limit-1))
-        }
+        let rect2 = SKShapeNode(rect: CGRect(x: size.width*0.25, y: size.height * 0.55+size.height * 0.33, width: size.width*0.4, height: size.height * 0.01))
+        rect2.fillColor = SKColor.blue
+        addChild(rect2)
         
         let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
         
         currentWord = words[randomIndex]
-        currentWordDefintion = getWordDefinition(word: currentWord)
+        currentWordDefintion = ""//getWordDefinition(word: currentWord)
         
         let label = SKLabelNode()
         label.text = currentWord
-        label.fontSize = fontSize
+        label.fontSize = 20
         label.fontColor = SKColor.white
         label.position = CGPoint(x: 300, y: size.height * 0.75)
         addChild(label)
@@ -70,8 +64,8 @@ class GameScene: SKScene {
                 do {
                     
                     let jsonData = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
-                    let results = jsonData["results"] as! NSArray
-                    let keys = results[0] as! NSDictionary
+                    let results = jsonData["results"] as! NSArray?
+                    let keys = results![0] as! NSDictionary
                     let lexicalEntires = keys["lexicalEntries"] as! NSArray
                     let entries = lexicalEntires[0] as! NSDictionary
                     let entry = entries["entries"] as! NSArray
