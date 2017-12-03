@@ -15,15 +15,12 @@ import SpriteKit
 extension Character {
     var string: String { return String(self) }
 }
-
 extension String.CharacterView {
     var string: String { return String(self) }
 }
-
 extension Sequence where Iterator.Element == UnicodeScalar {
     var string: String { return String(String.UnicodeScalarView(self)) }
 }
-
 extension String {
     func index(at offset: Int) -> Index? {
         precondition(offset >= 0, "offset can't be negative")
@@ -33,6 +30,9 @@ extension String {
         precondition(offset >= 0, "offset can't be negative")
         guard let index = index(at: offset) else { return nil }
         return self[index]
+    }
+    func removingWhitespaces() -> String {
+        return components(separatedBy: .whitespaces).joined()
     }
     subscript(offset: Int) -> String {
         precondition(offset >= 0, "offset can't be negative")
@@ -66,10 +66,14 @@ class GameViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var hiddenWord: UILabel!
     
+    
+    var mistakes : Int = 6
+    
     var scene : GameScene? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
         skView.showsFPS = true
@@ -91,6 +95,12 @@ class GameViewController: UIViewController {
         return true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func onTipButton() {
         tipLabel.isHidden = !tipLabel.isHidden
     }
@@ -98,23 +108,52 @@ class GameViewController: UIViewController {
     @IBAction func onLetterButton(_ sender: UIButton) {
         let letter = Character((sender.titleLabel?.text?.lowercased())!)
         var charIndexs : [Int] = []
-        var toBeHidden : Bool = false
+        var found : Bool = false
         
         for index in 0...(scene?.currentWord)!.count-1{
             let c = (scene?.currentWord.lowercased())!.character(at: index)!
             if c==letter {
                 charIndexs.append(index)
-                toBeHidden = true
+                found = true
             }
         }
         
-        for i in 0...charIndexs.count-1{
-            hiddenWord.text = replace(myString: hiddenWord.text!, (charIndexs[i]*2), (scene?.currentWord.uppercased())!.character(at: charIndexs[i])!)
+        for i in charIndexs{
+            hiddenWord.text = replace(myString: hiddenWord.text!, (i*2), (scene?.currentWord.uppercased())!.character(at: i)!)
         }
         
-        if toBeHidden {
+        if found {
             sender.isHidden = true
+        } else {
+            sender.isHidden = true
+            mistakes -= 1
+            if mistakes <= 0 {
+                performSegue(withIdentifier: "ResultsSegue", sender: nil)
+            }
         }
+        
+        if hiddenWord.text!.lowercased().removingWhitespaces() == (scene?.currentWord.lowercased())! {
+            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            if mistakes > 0 {
+                resultsViewController.colourRed = false
+                resultsViewController.result = "YOU WON!"
+            } else {
+                resultsViewController.colourRed = true
+                resultsViewController.result = "YOU LOST!"
+            }
+            resultsViewController.word = (scene?.currentWord.uppercased())!
+            resultsViewController.definition = (scene?.currentWordDefintion.capitalized)!
+        }
+    }
+    
+    @IBAction func unwindHandman(segue : UIStoryboardSegue){
+        viewDidLoad()
     }
     
     // This method is taken from Stackoverflow because Swift doesn't want me to have an easy life

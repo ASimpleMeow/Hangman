@@ -13,6 +13,7 @@
 		5BBD2ACD1FCC109A003539AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2ACB1FCC109A003539AB /* Main.storyboard */; };
 		5BBD2ACF1FCC109A003539AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2ACE1FCC109A003539AB /* Assets.xcassets */; };
 		5BBD2AD21FCC109A003539AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2AD01FCC109A003539AB /* LaunchScreen.storyboard */; };
+		5BBE68D41FD480AC004E4E84 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE68D31FD480AC004E4E84 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		5BBD2AD31FCC109A003539AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BBD2AD81FCC109A003539AB /* HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBD2AE31FCC109A003539AB /* HangmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBE68D31FD480AC004E4E84 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				5BBD2AC11FCC109A003539AB /* AppDelegate.swift */,
 				5BBD2AC71FCC109A003539AB /* GameScene.swift */,
 				5BBD2AC91FCC109A003539AB /* GameViewController.swift */,
+				5BBE68D31FD480AC004E4E84 /* ResultsViewController.swift */,
 				5BBD2ACB1FCC109A003539AB /* Main.storyboard */,
 				5BBD2ACE1FCC109A003539AB /* Assets.xcassets */,
 				5BBD2AD01FCC109A003539AB /* LaunchScreen.storyboard */,
@@ -239,6 +242,7 @@
 				5BBD2AC81FCC109A003539AB /* GameScene.swift in Sources */,
 				5BBD2ACA1FCC109A003539AB /* GameViewController.swift in Sources */,
 				5BBD2AC21FCC109A003539AB /* AppDelegate.swift in Sources */,
+				5BBE68D41FD480AC004E4E84 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

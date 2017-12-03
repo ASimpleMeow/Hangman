@@ -12,7 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     let words : [String] = [
-        "Caat", "Liion", "Casstle", "Kinng", "Proggram", "Tetst", "Compurter"
+        "Cat", "Lion", "Castle", "King", "Program", "Test", "Computer"
     ]
     
     public var currentWord : String = ""
@@ -31,7 +31,7 @@ class GameScene: SKScene {
         let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
         
         currentWord = words[randomIndex]
-        currentWordDefintion = ""//getWordDefinition(word: currentWord)
+        currentWordDefintion = getWordDefinition(word: currentWord)
         
         let label = SKLabelNode()
         label.text = currentWord
