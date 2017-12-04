@@ -66,6 +66,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var hiddenWord: UILabel!
     
+    @IBOutlet weak var topLetterStack: UIStackView!
+    @IBOutlet weak var middleLetterStack: UIStackView!
+    @IBOutlet weak var bottomLetterStack: UIStackView!
     
     var mistakes : Int = 6
     
@@ -82,6 +85,11 @@ class GameViewController: UIViewController {
         scene?.scaleMode = .resizeFill
         skView.presentScene(scene)
         
+        reset()
+    }
+    
+    func reset(){
+        scene?.reset()
         tipLabel.isHidden = true
         tipLabel.text = scene?.currentWordDefintion
         hiddenWord.text = ""
@@ -106,6 +114,11 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func onLetterButton(_ sender: UIButton) {
+        
+        if sender.tintColor == UIColor.red {
+            return
+        }
+        
         let letter = Character((sender.titleLabel?.text?.lowercased())!)
         var charIndexs : [Int] = []
         var found : Bool = false
@@ -122,10 +135,11 @@ class GameViewController: UIViewController {
             hiddenWord.text = replace(myString: hiddenWord.text!, (i*2), (scene?.currentWord.uppercased())!.character(at: i)!)
         }
         
-        if found {
-            sender.isHidden = true
-        } else {
-            sender.isHidden = true
+        sender.tintColor = UIColor.red
+        
+        if !found {
+            //sender.isHidden = true
+            sender.titleLabel?.textColor = UIColor.red
             mistakes -= 1
             if mistakes <= 0 {
                 performSegue(withIdentifier: "ResultsSegue", sender: nil)
@@ -153,7 +167,27 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func unwindHandman(segue : UIStoryboardSegue){
-        viewDidLoad()
+        reset()
+        
+        for view in topLetterStack.subviews as [UIView]{
+            if let btn = view as? UIButton {
+                //btn.isHidden = false
+                btn.tintColor = UIColor.blue
+            }
+        }
+        
+        for view in middleLetterStack.subviews as [UIView]{
+            if let btn = view as? UIButton {
+                btn.tintColor = UIColor.blue
+            }
+        }
+        
+        for view in bottomLetterStack.subviews as [UIView]{
+            if let btn = view as? UIButton {
+                btn.tintColor = UIColor.blue
+            }
+        }
+        
     }
     
     // This method is taken from Stackoverflow because Swift doesn't want me to have an easy life
