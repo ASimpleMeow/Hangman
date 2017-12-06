@@ -14,6 +14,10 @@
 		5BBD2ACF1FCC109A003539AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2ACE1FCC109A003539AB /* Assets.xcassets */; };
 		5BBD2AD21FCC109A003539AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBD2AD01FCC109A003539AB /* LaunchScreen.storyboard */; };
 		5BBE68D41FD480AC004E4E84 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE68D31FD480AC004E4E84 /* ResultsViewController.swift */; };
+		5BCFB8F11FD8498000DBF79E /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5BCFB8F01FD848F700DBF79E /* ARCADECLASSIC.TTF */; };
+		5BCFB8FC1FD8518200DBF79E /* background_music.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5BCFB8F91FD8518200DBF79E /* background_music.wav */; };
+		5BCFB8FD1FD8518200DBF79E /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5BCFB8FA1FD8518200DBF79E /* fail.wav */; };
+		5BCFB8FE1FD8518200DBF79E /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5BCFB8FB1FD8518200DBF79E /* success.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		5BBD2AD81FCC109A003539AB /* HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBD2AE31FCC109A003539AB /* HangmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBE68D31FD480AC004E4E84 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		5BCFB8F01FD848F700DBF79E /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARCADECLASSIC.TTF; sourceTree = "<group>"; };
+		5BCFB8F91FD8518200DBF79E /* background_music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background_music.wav; sourceTree = "<group>"; };
+		5BCFB8FA1FD8518200DBF79E /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
+		5BCFB8FB1FD8518200DBF79E /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,8 @@
 		5BBD2AB51FCC1099003539AB = {
 			isa = PBXGroup;
 			children = (
+				5BCFB8F81FD8518200DBF79E /* Sounds */,
+				5BCFB8EF1FD848D300DBF79E /* Fonts */,
 				5BBD2AC01FCC1099003539AB /* Hangman */,
 				5BBD2ABF1FCC1099003539AB /* Products */,
 			);
@@ -103,6 +113,24 @@
 				5BBD2AD31FCC109A003539AB /* Info.plist */,
 			);
 			path = Hangman;
+			sourceTree = "<group>";
+		};
+		5BCFB8EF1FD848D300DBF79E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5BCFB8F01FD848F700DBF79E /* ARCADECLASSIC.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5BCFB8F81FD8518200DBF79E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5BCFB8F91FD8518200DBF79E /* background_music.wav */,
+				5BCFB8FA1FD8518200DBF79E /* fail.wav */,
+				5BCFB8FB1FD8518200DBF79E /* success.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +240,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BCFB8FD1FD8518200DBF79E /* fail.wav in Resources */,
+				5BCFB8F11FD8498000DBF79E /* ARCADECLASSIC.TTF in Resources */,
 				5BBD2ACD1FCC109A003539AB /* Main.storyboard in Resources */,
+				5BCFB8FE1FD8518200DBF79E /* success.wav in Resources */,
 				5BBD2ACF1FCC109A003539AB /* Assets.xcassets in Resources */,
 				5BBD2AD21FCC109A003539AB /* LaunchScreen.storyboard in Resources */,
+				5BCFB8FC1FD8518200DBF79E /* background_music.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

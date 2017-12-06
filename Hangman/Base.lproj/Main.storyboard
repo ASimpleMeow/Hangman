@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ARCADECLASSIC.TTF">
+            <string>ArcadeClassic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -22,75 +27,75 @@
                                 <rect key="frame" x="0.0" y="470.5" width="375" height="166.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="z7g-fz-BkI">
-                                        <rect key="frame" x="32.5" y="0.0" width="310" height="46"/>
+                                        <rect key="frame" x="32.5" y="0.0" width="310" height="48.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe5-oq-2Tg">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="A"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="VnK-9o-8us"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bH-Q6-i5A">
-                                                <rect key="frame" x="35" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="35" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="B"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="g9C-le-jvU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-rb-0z2">
-                                                <rect key="frame" x="70" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="70" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="C"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="g3v-bp-sS3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lg-g9-gNT">
-                                                <rect key="frame" x="105" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="105" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="D"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="aXH-AZ-Rde"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-LF-Sxo">
-                                                <rect key="frame" x="140" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="140" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="E"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="f13-vy-les"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elh-He-XAu">
-                                                <rect key="frame" x="175" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="175" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="F"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="2aq-6M-E77"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOW-dv-DV2">
-                                                <rect key="frame" x="210" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="210" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="G"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="HZZ-k4-qhB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d5-Tq-JOI">
-                                                <rect key="frame" x="245" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="245" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="H"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iFb-NV-4zZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI6-Q5-HV2">
-                                                <rect key="frame" x="280" y="0.0" width="30" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="280" y="0.0" width="30" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="I"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Lfm-EM-cxH"/>
@@ -99,67 +104,67 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-tF-YJz">
-                                        <rect key="frame" x="50" y="56" width="275" height="49"/>
+                                        <rect key="frame" x="50" y="58.5" width="275" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTB-vV-1Hb">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="J"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="nJu-yp-wnl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIh-4g-ibk">
-                                                <rect key="frame" x="35" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="35" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="K"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="AUH-dJ-1R8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNO-4f-7h5">
-                                                <rect key="frame" x="70" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="70" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="L"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="yu6-gC-clG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-mM-8C1">
-                                                <rect key="frame" x="105" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="105" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="M"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="t0z-md-nDq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NF-h6-Vgr">
-                                                <rect key="frame" x="140" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="140" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="N"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dvu-dM-85l"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phk-sI-8zp">
-                                                <rect key="frame" x="175" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="175" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="O"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="aYY-4i-mR3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Neb-9s-ES2">
-                                                <rect key="frame" x="210" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <rect key="frame" x="210" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="P"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="QQw-T3-Yc0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wi-II-Jlf">
-                                                <rect key="frame" x="245" y="0.0" width="30" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="245" y="0.0" width="30" height="48"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="Q"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="EGu-fL-XSb"/>
@@ -169,75 +174,75 @@
                                         <viewLayoutGuide key="safeArea" id="sLs-K0-03x"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hpt-pr-M1P">
-                                        <rect key="frame" x="32.5" y="115" width="310" height="51.5"/>
+                                        <rect key="frame" x="32.5" y="116.5" width="310" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWj-cJ-ZKt">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="R"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="qlN-hO-TRG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFX-Ut-6zO">
-                                                <rect key="frame" x="35" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="35" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="S"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Fb5-Mj-UB0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e07-vM-bc1">
-                                                <rect key="frame" x="70" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="70" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="T"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="lUN-Fw-qIw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fme-Cm-xg0">
-                                                <rect key="frame" x="105" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="105" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="U"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mMz-QD-PIJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxG-AG-wWD">
-                                                <rect key="frame" x="140" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="140" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="V"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Hk9-kR-8XC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-2o-JL8">
-                                                <rect key="frame" x="175" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="175" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="W"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="voX-Fm-JKw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWN-10-bvP">
-                                                <rect key="frame" x="210" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="210" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="X"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Nq6-LE-rv8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-Uz-s2n">
-                                                <rect key="frame" x="245" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="245" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="Y"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="wtc-tl-typ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4B-py-s7Q">
-                                                <rect key="frame" x="280" y="0.0" width="30" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <rect key="frame" x="280" y="0.0" width="30" height="50"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="32"/>
                                                 <state key="normal" title="Z"/>
                                                 <connections>
                                                     <action selector="onLetterButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="aNv-Dn-fuS"/>
@@ -249,31 +254,33 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-kG-bfd">
-                                <rect key="frame" x="330" y="79" width="30" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="ℹ︎"/>
+                                <rect key="frame" x="330" y="79" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="ℹ︎">
+                                    <color key="titleColor" red="0.22745098039215686" green="1" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onTipButton" destination="BV1-FR-VrT" eventType="touchUpInside" id="6Wd-j3-aNE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" minimumFontSize="9" highlighted="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeV-eD-tzq">
-                                <rect key="frame" x="16" y="124" width="343" height="62"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" minimumScaleFactor="0.25" highlighted="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeV-eD-tzq">
+                                <rect key="frame" x="16" y="124" width="343" height="127.5"/>
+                                <color key="backgroundColor" red="0.050027765008333364" green="0.42535328580833337" blue="0.075410092436111159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">This is a test This is a test This is a test This is a test This is a test This is a test This is a test This is a test This is a test This is a test </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.63857060670852661" green="0.99324852228164673" blue="0.95318323373794556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="25"/>
+                                <color key="textColor" red="0.63921568627450975" green="0.99215686274509807" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.74102979898452759" green="0.9948151707649231" blue="0.96486514806747437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.28627450980000002" green="0.61960784310000006" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oed-e7-f4H">
-                                <rect key="frame" x="50" y="368.5" width="275" height="47"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="40"/>
-                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oed-e7-f4H">
+                                <rect key="frame" x="50" y="364.5" width="275" height="51"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="50"/>
+                                <color key="textColor" red="0.15686274509803921" green="1" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.43137254901960786" blue="0.20392156862745098" alpha="0.89750107020547942" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AeV-eD-tzq" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="16" id="AS2-mF-GvD"/>
                             <constraint firstItem="duC-kG-bfd" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="15" id="Cph-o4-7Lt"/>
@@ -313,33 +320,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGI-KE-u6p">
-                                <rect key="frame" x="50" y="124" width="275" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <rect key="frame" x="50" y="124" width="275" height="56"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="55"/>
                                 <color key="textColor" red="0.361083984375" green="1" blue="0.28466796875" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amq-0J-cHN">
-                                <rect key="frame" x="100" y="244" width="175" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="100" y="240" width="175" height="40.5"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="40"/>
+                                <color key="textColor" red="0.63921568630000003" green="0.99215686270000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-kH-gul">
-                                <rect key="frame" x="50" y="355" width="275" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-kH-gul">
+                                <rect key="frame" x="50" y="330.5" width="275" height="25.5"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="25"/>
+                                <color key="textColor" red="0.63921568630000003" green="0.99215686270000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47058823529411764" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="amq-0J-cHN" firstAttribute="top" secondItem="gGI-KE-u6p" secondAttribute="bottom" constant="60" id="1jh-EO-Wci"/>
                             <constraint firstItem="EFc-Er-Agm" firstAttribute="trailing" secondItem="0yz-kH-gul" secondAttribute="trailing" constant="50" id="4b9-HL-EnU"/>
                             <constraint firstItem="gGI-KE-u6p" firstAttribute="top" secondItem="EFc-Er-Agm" secondAttribute="top" constant="60" id="8sz-fh-lV5"/>
                             <constraint firstItem="EFc-Er-Agm" firstAttribute="trailing" secondItem="amq-0J-cHN" secondAttribute="trailing" constant="100" id="CyP-hw-5KT"/>
                             <constraint firstItem="gGI-KE-u6p" firstAttribute="leading" secondItem="EFc-Er-Agm" secondAttribute="leading" constant="50" id="Fq0-Vv-Gat"/>
+                            <constraint firstItem="0yz-kH-gul" firstAttribute="top" secondItem="amq-0J-cHN" secondAttribute="bottom" constant="50" id="GMU-mZ-oA8"/>
                             <constraint firstItem="EFc-Er-Agm" firstAttribute="trailing" secondItem="gGI-KE-u6p" secondAttribute="trailing" constant="50" id="In2-gP-n8a"/>
-                            <constraint firstItem="0yz-kH-gul" firstAttribute="top" secondItem="amq-0J-cHN" secondAttribute="bottom" constant="75" id="RuR-tj-jTR"/>
                             <constraint firstItem="amq-0J-cHN" firstAttribute="leading" secondItem="EFc-Er-Agm" secondAttribute="leading" constant="100" id="f7p-As-t52"/>
                             <constraint firstItem="0yz-kH-gul" firstAttribute="leading" secondItem="EFc-Er-Agm" secondAttribute="leading" constant="50" id="prU-jh-qwI"/>
                         </constraints>

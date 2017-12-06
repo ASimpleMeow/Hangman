@@ -93,9 +93,31 @@ class GameViewController: UIViewController {
         tipLabel.isHidden = true
         tipLabel.text = scene?.currentWordDefintion
         hiddenWord.text = ""
+        mistakes = 6
         
         for _ in (scene?.currentWord)! {
             hiddenWord.text?.append("_ ")
+        }
+        
+        for view in topLetterStack.subviews as [UIView]{
+            if let btn = view as? UIButton {
+                btn.tintColor = UIColor(red: 0/255, green: 255/255, blue: 25/255, alpha: 1)
+                btn.backgroundColor = UIColor(red: 75/255, green: 226/255, blue: 140/255, alpha: 0.25)
+            }
+        }
+        
+        for view in middleLetterStack.subviews as [UIView]{
+            if let btn = view as? UIButton {
+                btn.tintColor = UIColor(red: 0/255, green: 255/255, blue: 25/255, alpha: 1)
+                btn.backgroundColor = UIColor(red: 75/255, green: 226/255, blue: 140/255, alpha: 0.25)
+            }
+        }
+        
+        for view in bottomLetterStack.subviews as [UIView]{
+            if let btn = view as? UIButton {
+                btn.tintColor = UIColor(red: 0/255, green: 255/255, blue: 25/255, alpha: 1)
+                btn.backgroundColor = UIColor(red: 75/255, green: 226/255, blue: 140/255, alpha: 0.25)
+            }
         }
     }
     
@@ -115,7 +137,7 @@ class GameViewController: UIViewController {
     
     @IBAction func onLetterButton(_ sender: UIButton) {
         
-        if sender.tintColor == UIColor.red {
+        if sender.tintColor == UIColor(red: 255/255, green: 38/255, blue: 1/255, alpha: 1) {
             return
         }
         
@@ -135,16 +157,19 @@ class GameViewController: UIViewController {
             hiddenWord.text = replace(myString: hiddenWord.text!, (i*2), (scene?.currentWord.uppercased())!.character(at: i)!)
         }
         
-        sender.tintColor = UIColor.red
+        sender.tintColor = UIColor(red: 255/255, green: 38/255, blue: 1/255, alpha: 1)
+        sender.backgroundColor = UIColor(red: 82/255, green: 9/255, blue: 7/255, alpha: 0.25)
         
         if !found {
-            //sender.isHidden = true
             sender.titleLabel?.textColor = UIColor.red
             mistakes -= 1
+            scene?.draw(mistakes: mistakes)
             if mistakes <= 0 {
                 performSegue(withIdentifier: "ResultsSegue", sender: nil)
             }
         }
+        
+        scene?.playButtonSound(positive: found)
         
         if hiddenWord.text!.lowercased().removingWhitespaces() == (scene?.currentWord.lowercased())! {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
@@ -168,25 +193,6 @@ class GameViewController: UIViewController {
     
     @IBAction func unwindHandman(segue : UIStoryboardSegue){
         reset()
-        
-        for view in topLetterStack.subviews as [UIView]{
-            if let btn = view as? UIButton {
-                //btn.isHidden = false
-                btn.tintColor = UIColor.blue
-            }
-        }
-        
-        for view in middleLetterStack.subviews as [UIView]{
-            if let btn = view as? UIButton {
-                btn.tintColor = UIColor.blue
-            }
-        }
-        
-        for view in bottomLetterStack.subviews as [UIView]{
-            if let btn = view as? UIButton {
-                btn.tintColor = UIColor.blue
-            }
-        }
         
     }
     

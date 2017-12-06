@@ -25,7 +25,7 @@ class ResultsViewController: UIViewController {
         navigationItem.hidesBackButton = true
         
         resultsLabel.text = result
-        resultsLabel.textColor = colourRed ? UIColor.red : UIColor.green
+        resultsLabel.textColor = colourRed ? UIColor(red: 255/255, green: 38/255, blue: 1/255, alpha: 1) : UIColor(red: 40/255,green: 1,blue: 60/255,alpha: 1)
         resultsWord.text = word
         resultsDefinition.text = definition
         
