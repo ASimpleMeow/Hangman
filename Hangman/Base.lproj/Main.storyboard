@@ -332,8 +332,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-kH-gul">
-                                <rect key="frame" x="50" y="330.5" width="275" height="25.5"/>
-                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="25"/>
+                                <rect key="frame" x="50" y="330.5" width="275" height="20.5"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="20"/>
                                 <color key="textColor" red="0.63921568630000003" green="0.99215686270000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
